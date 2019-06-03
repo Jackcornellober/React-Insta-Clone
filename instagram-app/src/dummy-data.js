@@ -61,7 +61,7 @@ const dummyData = [
       {
         id: 5,
         username: "dennis_futbol",
-        text: "Is"
+        text: "Is*"
       }
     ]
   },
