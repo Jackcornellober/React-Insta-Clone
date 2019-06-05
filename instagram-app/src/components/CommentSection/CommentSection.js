@@ -4,13 +4,7 @@ import CommentBox from './CommentBox'
 
 class CommentSection extends React.Component {
     state = {
-        comments: [],
-    }
-    
-    componentDidMount() {
-        this.setState({
-            comments: this.props.comments
-        })
+        comments: this.props.comments,
     }
     
     addNewComment = (newValue) => {

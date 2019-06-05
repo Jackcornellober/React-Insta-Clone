@@ -11,7 +11,7 @@ import '../src/components/PostContainer/PostContainer.css'
 
 class App extends React.Component {
   state = {
-    stateData: []
+    stateData: [],
   }
 
   componentDidMount() {
@@ -21,11 +21,17 @@ class App extends React.Component {
     })
   }
 
+  searchFunction = (searchValue) => {
+    this.setState ({
+      stateData: dummyData.filter(post => post.username.includes(searchValue))
+  })
+  }
+
   render() {
     console.log('rendering!');
     return (
       <div>
-        <SearchBar/>
+        <SearchBar searchFunction = {this.searchFunction}/>
         {this.state.stateData.map(x => <PostContainer key = {x.id} data = {x}/>)}
       </div>
     );
