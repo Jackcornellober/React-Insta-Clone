@@ -1,6 +1,6 @@
 .thumbnail {
-    width: 1.3rem;
-    height: 1.3rem;
+    width: 1.2rem;
+    height: 1.2rem;
     border-radius: 5rem;
 }
 
@@ -17,8 +17,8 @@
 }
 
 .comment {
-    margin-left: .7rem;
-    font-size: .7rem;
+    margin-left: .5rem;
+    font-size: .5rem;
     max-width: 19.2rem;
     margin-bottom: .17rem;
 }
@@ -28,13 +28,78 @@
 }
 
 .likesCounter {
-    font-size: .7rem;
-    margin-left: .7rem;
+    font-size: .5rem;
+    margin-left: .5rem;
     font-weight: bold;
 }
 
 .thumbName {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     height: 2rem;
+    width: 2rem;
+    margin-left: .68rem;
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+}
+
+.searchBar {
+    margin-left: .5rem;
+    margin-bottom: 1rem;
+    border-bottom: .5px solid lightgrey;
+    padding-bottom: .5rem;
+    margin-top: .5rem;
+}
+
+.instagram {
+    padding-left: 1.3rem;
+    border-left: .5px solid black;
+    margin-left: 0;
+}
+
+input.searchBox {
+    margin-left: 4rem;
+    width: 6rem;
+    font-size: .5rem;
+    text-align: center;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 1rem;
+}
+
+.icon1 {
+    margin-left: 5.5rem;
+}
+
+.icon4 {
+    width: 13px;
+    height: 13px;
+}
+
+.userName {
+    height: .87rem;
+    font-size: .5rem;
+    margin-left: .5rem;
+    font-weight: bold;
+}
+
+.pictureIcons {
+    margin-left: .5rem;
+}
+
+input.commentBox {
+    border: none;
+    border-top: .5px solid gainsboro;
+    padding-top: .75rem;
+    margin-left: .5rem;
+    font-size: .5rem;
+    margin-bottom: .5rem;
+    margin-top: .25rem;
+    width: 95%;
 }

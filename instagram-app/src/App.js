@@ -9,13 +9,27 @@ import '../src/components/PostContainer/PostContainer.css'
 
 
 
-function App() {
-  return (
-    <div>
-      <SearchBar/>
-      {dummyData.map(x => <PostContainer key = {x.id} data = {x}/>)}
-    </div>
-  );
+class App extends React.Component {
+  state = {
+    stateData: []
+  }
+
+  componentDidMount() {
+    console.log('mounted!')
+    this.setState({
+      stateData: dummyData
+    })
+  }
+
+  render() {
+    console.log('rendering!');
+    return (
+      <div>
+        <SearchBar/>
+        {this.state.stateData.map(x => <PostContainer key = {x.id} data = {x}/>)}
+      </div>
+    );
+  }
 }
 
 export default App;
