@@ -13,6 +13,8 @@ class PostContainer extends React.Component {
         display: 'none',
     }
 
+    
+
     addLike = () => {
             if(this.state.likes === this.props.data.likes) {
                 this.setState({
