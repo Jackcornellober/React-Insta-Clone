@@ -4,6 +4,19 @@ import CommentSection from '../CommentSection/CommentSection';
 import PostContainer from './PostContainer';
 import '../PostContainer/PostContainer.css'
 import dummyData from '../../dummy-data'
+import { Alert } from 'reactstrap';
+import styled from 'styled-components'
+
+const PageContainer = styled.div`
+background: #fafafa;
+display: flex;
+flex-direction: column;
+align-items: center;
+`
+
+const searchStyle = {
+  marginBottom: '10rem'
+}
 
 class PostsPage extends React.Component {
     
@@ -21,10 +34,10 @@ class PostsPage extends React.Component {
     render() {
       console.log('rendering!');
       return (
-        <div>
-          <SearchBar searchFunction = {this.searchFunction} /><button onClick = {this.props.logout}>Log Out</button>
+        <PageContainer>
+          <SearchBar style = {searchStyle} logout = {this.props.logout} searchFunction = {this.searchFunction} />
           {this.state.stateData.map(x => <PostContainer key = {x.id} data = {x}/>)}
-        </div>
+        </PageContainer>
       );
     }
   }

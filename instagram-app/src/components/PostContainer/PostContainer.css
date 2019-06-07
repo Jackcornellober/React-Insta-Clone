@@ -5,14 +5,14 @@
 }
 
 .postPhoto {
-    width: 21.5rem;
-    height: 21.5rem;
+    width: 18rem;
+    height: 18rem;
 }
 
 .postContainer {
     border: 1px solid lightgrey;
     margin-left: .8rem;
-    max-width: 21.5rem;
+    max-width: 18rem;
     margin-bottom: 3rem;
 }
 
@@ -46,35 +46,11 @@
     padding-bottom: .1rem;
 }
 
-.searchBar {
-    margin-left: .5rem;
-    margin-bottom: 1rem;
-    border-bottom: .5px solid lightgrey;
-    padding-bottom: .5rem;
-    margin-top: .5rem;
-}
-
-.instagram {
-    padding-left: 1.3rem;
-    border-left: .5px solid black;
-    margin-left: 0;
-}
-
 input.searchBox {
     margin-left: 4rem;
     width: 6rem;
     font-size: .5rem;
     text-align: center;
-}
-
-.icon {
-    width: 16px;
-    height: 16px;
-    margin-right: 1rem;
-}
-
-.icon1 {
-    margin-left: 5.5rem;
 }
 
 .icon4 {
@@ -102,7 +78,4 @@ input.commentBox {
     margin-bottom: .5rem;
     margin-top: .25rem;
     width: 95%;
-}
-
-.searchForm {
 }

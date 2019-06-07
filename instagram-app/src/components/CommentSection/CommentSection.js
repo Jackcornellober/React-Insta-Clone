@@ -1,6 +1,7 @@
 import React from 'react';
 import Comment from './Comment'
 import CommentBox from './CommentBox'
+import styled from 'styled-components'
 
 class CommentSection extends React.Component {
     state = {

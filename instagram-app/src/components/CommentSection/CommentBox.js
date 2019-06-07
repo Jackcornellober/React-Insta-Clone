@@ -1,4 +1,5 @@
 import React from 'react'
+import styled from 'styled-components'
 
 class CommentBox extends React.Component{
     state = {
